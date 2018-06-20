@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iRecommend_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boredom Breaker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ktp-hR-aiJ">
+                                <rect key="frame" x="16" y="28" width="343" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Jhj-10-u8E"/>
+                                    <constraint firstAttribute="height" constant="52" id="wHu-ek-Lgy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.089913264083117728" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmW-E3-RW5">
+                                <rect key="frame" x="16" y="216" width="343" height="235"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="N5x-rG-TO2"/>
+                                    <constraint firstAttribute="height" constant="235" id="eVy-fq-zjT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="59"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <segue destination="Z3e-kT-jqb" kind="show" id="5mF-wP-oyt"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10068f_grande" translatesAutoresizingMaskIntoConstraints="NO" id="ecL-j4-5Cy">
+                                <rect key="frame" x="59" y="406" width="257" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="HNT-yZ-CFi"/>
+                                    <constraint firstAttribute="height" constant="190" id="rq2-xH-Lgp"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bored-cartoon-man-drumming-his-fingers-19682413" translatesAutoresizingMaskIntoConstraints="NO" id="Ugg-FO-iJi">
+                                <rect key="frame" x="52" y="88" width="270" height="206"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="1mc-RK-FLh"/>
+                                    <constraint firstAttribute="height" constant="206" id="ceB-dE-Kd8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.14420902985191209" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ktp-hR-aiJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="16Q-I4-RJP"/>
+                            <constraint firstItem="DmW-E3-RW5" firstAttribute="top" secondItem="Ktp-hR-aiJ" secondAttribute="bottom" constant="136" id="3DW-Mi-16y"/>
+                            <constraint firstItem="Ugg-FO-iJi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-142.5" id="97C-SA-Pan"/>
+                            <constraint firstItem="DmW-E3-RW5" firstAttribute="centerX" secondItem="Ktp-hR-aiJ" secondAttribute="centerX" id="Buh-nn-eIB"/>
+                            <constraint firstItem="Ugg-FO-iJi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DQ2-Tf-d9B"/>
+                            <constraint firstItem="DmW-E3-RW5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ONq-gb-mgN"/>
+                            <constraint firstItem="ecL-j4-5Cy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="167.5" id="UjT-Nw-bi3"/>
+                            <constraint firstItem="ecL-j4-5Cy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b4R-pR-Ru9"/>
+                            <constraint firstItem="DmW-E3-RW5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qb9-93-qk8"/>
+                            <constraint firstItem="Ktp-hR-aiJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-279.5" id="ua3-Vy-1oe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
+        </scene>
+        <!--Instructions View Controller-->
+        <scene sceneID="7yi-nz-erh">
+            <objects>
+                <viewController id="Z3e-kT-jqb" customClass="InstructionsViewController" customModule="iRecommend_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zmQ-ig-dxj"/>
+                        <viewControllerLayoutGuide type="bottom" id="FaC-J9-kFD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Hf-Vg-yi2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbf-MM-ekI">
+                                <rect key="frame" x="187" y="448" width="172" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.081942766766834652" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LRA-99-UOY"/>
+                                    <constraint firstAttribute="width" constant="172" id="efg-0c-a0M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
+                                <state key="normal" title="Click me!">
+                                    <color key="titleColor" red="0.51792684765980734" green="1" blue="0.61918186648817275" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zzv-L6-4SI" kind="show" id="Jfn-WZ-c2Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgw-3u-2PD">
+                                <rect key="frame" x="16" y="617" width="73" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.14420902990000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QS9-Tl-WcG"/>
+                                    <constraint firstAttribute="width" constant="73" id="TXR-9W-wPC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="21"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.51792684769999997" green="1" blue="0.61918186649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="gAQ-Jv-znH"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Click the button below to see what you should do" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LB5-Wl-VjE">
+                                <rect key="frame" x="33" y="147" width="309" height="240"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="0gC-oM-ncn"/>
+                                    <constraint firstAttribute="width" constant="309" id="wBo-f3-6Aj"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="0.88205591083600798" blue="0.40632273958604925" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="31"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LB5-Wl-VjE" firstAttribute="centerX" secondItem="3Hf-Vg-yi2" secondAttribute="centerX" id="Aqt-pb-sCo"/>
+                            <constraint firstItem="wgw-3u-2PD" firstAttribute="centerX" secondItem="3Hf-Vg-yi2" secondAttribute="centerX" constant="-135" id="DSX-lV-lR1"/>
+                            <constraint firstItem="bbf-MM-ekI" firstAttribute="centerY" secondItem="3Hf-Vg-yi2" secondAttribute="centerY" constant="129.5" id="Q3g-Hf-oUq"/>
+                            <constraint firstItem="LB5-Wl-VjE" firstAttribute="centerY" secondItem="3Hf-Vg-yi2" secondAttribute="centerY" constant="-66.5" id="QHM-Ms-MV9"/>
+                            <constraint firstItem="bbf-MM-ekI" firstAttribute="centerX" secondItem="3Hf-Vg-yi2" secondAttribute="centerX" constant="85.5" id="SkG-p6-8WL"/>
+                            <constraint firstItem="wgw-3u-2PD" firstAttribute="centerY" secondItem="3Hf-Vg-yi2" secondAttribute="centerY" constant="298.5" id="oEG-bL-1pW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="recommendationLabel" destination="uGU-r1-Xdy" id="eGf-1b-zfN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7IT-30-zar" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709.60000000000002" y="138.98050974512745"/>
+        </scene>
+        <!--Recommendation View Controller-->
+        <scene sceneID="9TH-de-BqW">
+            <objects>
+                <viewController id="zzv-L6-4SI" customClass="RecommendationViewController" customModule="iRecommend_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z0g-l9-jaj"/>
+                        <viewControllerLayoutGuide type="bottom" id="cVZ-lJ-d8b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B8K-N1-pz0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Result Placeholder" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uGU-r1-Xdy">
+                                <rect key="frame" x="16" y="251" width="343" height="165"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="5zB-47-vGe"/>
+                                    <constraint firstAttribute="height" constant="165" id="rFH-tc-uAX"/>
+                                </constraints>
+                                <color key="textColor" red="0.70505460294949707" green="0.36613940337083839" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYr-6h-9sv">
+                                <rect key="frame" x="16" y="617" width="73" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.14420902990000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="Hoh-0I-qAE"/>
+                                    <constraint firstAttribute="height" constant="30" id="KTD-gN-n0U"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="d3y-Yu-nfm"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="73" id="oLP-fn-aLS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="21"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.51792684769999997" green="1" blue="0.61918186649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="lqo-N8-A6W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nb0-Ft-vp6">
+                                <rect key="frame" x="286" y="617" width="73" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.14420902990000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="IXz-1U-tTl"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="73" id="IlH-gL-fao"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="Lt7-YE-Ku1"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Mr4-DA-V6N"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="73" id="UJt-b9-5Ao"/>
+                                    <constraint firstAttribute="height" constant="30" id="rU6-Mp-0EG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="21"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.51792684769999997" green="1" blue="0.61918186649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Z3e-kT-jqb" kind="show" id="LiR-BN-t9b"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You should..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ynH-rc-QWt">
+                                <rect key="frame" x="44" y="82" width="287" height="41"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="287" id="NqB-4b-aTK"/>
+                                    <constraint firstAttribute="height" constant="41" id="wOv-hE-OVp"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="0.88205591080000001" blue="0.40632273959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="35"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ynH-rc-QWt" firstAttribute="centerY" secondItem="B8K-N1-pz0" secondAttribute="centerY" constant="-230.5" id="2ff-u4-uSt"/>
+                            <constraint firstItem="cYr-6h-9sv" firstAttribute="centerX" secondItem="B8K-N1-pz0" secondAttribute="centerX" constant="-135" id="DQ5-Ef-gwU"/>
+                            <constraint firstItem="uGU-r1-Xdy" firstAttribute="centerX" secondItem="B8K-N1-pz0" secondAttribute="centerX" constant="-0.5" id="Gek-Zn-6Xa"/>
+                            <constraint firstItem="ynH-rc-QWt" firstAttribute="centerX" secondItem="B8K-N1-pz0" secondAttribute="centerX" id="IdY-B6-PmY"/>
+                            <constraint firstItem="Nb0-Ft-vp6" firstAttribute="centerX" secondItem="B8K-N1-pz0" secondAttribute="centerX" constant="135" id="dYG-sd-AsY"/>
+                            <constraint firstItem="uGU-r1-Xdy" firstAttribute="centerY" secondItem="B8K-N1-pz0" secondAttribute="centerY" id="f0v-qj-yDs"/>
+                            <constraint firstItem="Nb0-Ft-vp6" firstAttribute="centerY" secondItem="B8K-N1-pz0" secondAttribute="centerY" constant="298.5" id="kcu-WH-e9N"/>
+                            <constraint firstItem="cYr-6h-9sv" firstAttribute="centerY" secondItem="B8K-N1-pz0" secondAttribute="centerY" constant="298.5" id="xmZ-1m-q6t"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultPlaceholder" destination="uGU-r1-Xdy" id="yAm-jV-GiO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e28-Fh-Yu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1496.8" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="10068f_grande" width="600" height="600"/>
+        <image name="bored-cartoon-man-drumming-his-fingers-19682413" width="800" height="800"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lqo-N8-A6W"/>
+        <segue reference="LiR-BN-t9b"/>
+    </inferredMetricsTieBreakers>
+</document>
